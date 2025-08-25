@@ -6,6 +6,18 @@
 
 header {
   background-color: white;
+  display: flex;
+  justify-content: space-around;
 }
 
-#headerMenu {}
+#headerMenu {
+  display: flex;
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+#headerMenu li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 10px
+}
