@@ -4,10 +4,13 @@
   box-sizing: border-box;
 }
 
+/* header */
+
 header {
   background-color: white;
   display: flex;
   justify-content: space-around;
+  margin: 20px;
 }
 
 #headerMenu {
@@ -20,4 +23,125 @@ header {
   color: rgb(0, 0, 0);
   text-decoration: none;
   margin: 10px
+}
+
+#headerMenu li a:hover {
+  color: #0080ff;
+  text-decoration: underline;
+}
+
+/* main */
+
+.contentMainBlack {
+  background-color: #171717;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.contentMainBlue {
+  background-color: #0080ff;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.iconMain {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+.iconMain img {
+  height: 50px;
+  margin: 20px 10px 20px 0;
+}
+
+/* footer */
+
+footer {
+  background-color: #313131;
+  background-image: url('../img/footer-bg.jpg');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: white;
+  padding: 50px 0px 0px 0px;
+  position: relative;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  width: 70%;
+  max-width: 1200;
+  margin: 0 auto;
+}
+
+.footerColumn h4 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.footerColumn ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerColumn li a {
+  color: #999;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.footerColumn li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Footer container */
+
+.bottomBarContainer {
+  background-color: #3f3f3f;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.bottomBarContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.signUp {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #0080ff;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social span {
+  color: #0080ff;
+  font-weight: bold;
 }
