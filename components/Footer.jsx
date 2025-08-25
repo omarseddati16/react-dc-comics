@@ -50,7 +50,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div>
+      <div className="footerDc">
         <img src="../img/dc-logo-bg.png" alt="" />
       </div>
       <div className="bottomBarContainer">
