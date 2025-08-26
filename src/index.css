@@ -36,7 +36,32 @@ header {
   background-color: #171717;
   color: #fff;
   text-align: center;
-  padding: 50px 0;
+
+}
+
+.containerComic {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rowComic {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.colComic {
+  width: calc(100% / 6);
+  padding: 10px;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.cardComic {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contentMainBlue {
@@ -56,10 +81,43 @@ header {
   font-size: 15px;
 }
 
+.loadMore {
+  background-color: #0080ff;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.colComic h4 {
+  margin-top: 10px;
+  justify-content: start;
+  display: flex;
+}
+
+.contentMainBlack img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.cardComic img {
+  width: 100%;
+  height: 180px;
+}
+
+
 .iconMain img {
   height: 50px;
   margin: 20px 10px 20px 0;
 }
+
+
 
 /* footer */
 

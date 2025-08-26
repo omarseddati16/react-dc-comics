@@ -1,10 +1,28 @@
 import React from 'react'
+import comics from '../src/data/comics'
+
 
 const Main = () => {
   return (
     <main>
       <div className="contentMainBlack">
-        <p>--&gt; Content goes here &lt;--</p>
+        <div></div>
+        <img src="../img/jumbotron.jpg" alt="" />
+        <div className="containerComic">
+          <div className="rowComic">
+            {comics.map(comic => {
+              return (
+                <div className="colComic" key={comic.id}>
+                  <div className="cardComic">
+                    <img src={comic.thumb} alt={comic.title} />
+                  </div>
+                  <h4>{comic.title}</h4>
+                </div>
+              )
+            })}
+            <button className="loadMore">LOAD MORE</button>
+          </div>
+        </div>
       </div>
 
       <div className="contentMainBlue">
