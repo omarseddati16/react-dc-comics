@@ -1,5 +1,38 @@
 import React from 'react'
 
+const link = [
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com",
+    img: "../img/footer-facebook.png",
+    icon: "facebook"
+  },
+  {
+    name: "Twitter",
+    url: "https://www.twitter.com",
+    img: "../img/footer-twitter.png",
+    icon: "twitter"
+  },
+  {
+    name: "YouTube",
+    url: "https://www.youtube.com",
+    img: "../img/footer-youtube.png",
+    icon: "youtube"
+  },
+  {
+    name: "Pinterest",
+    url: "https://www.pinterest.com",
+    img: "../img/footer-pinterest.png",
+    icon: "pinterest"
+  },
+  {
+    name: "Periscope",
+    url: "https://www.periscope.tv",
+    img: "../img/footer-periscope.png",
+    icon: "periscope"
+  }
+];
+
 const Footer = () => {
   return (
     <footer>
@@ -56,14 +89,16 @@ const Footer = () => {
       <div className="bottomBarContainer">
         <div className="bottomBarContent">
           <button className="signUp">SIGN-UP NOW!</button>
-          <div className="social">
+          <ul className="social">
             <span>FOLLOW US</span>
-            <a href="#"><img src="../img/footer-facebook.png" alt="Facebook" /></a>
-            <a href="#"><img src="../img/footer-twitter.png" alt="Twitter" /></a>
-            <a href="#"><img src="../img/footer-youtube.png" alt="YouTube" /></a>
-            <a href="#"><img src="../img/footer-pinterest.png" alt="Pinterest" /></a>
-            <a href="#"><img src="../img/footer-periscope.png" alt="Periscope" /></a>
-          </div>
+            {link.map((item, index) => (
+              <li key={index}>
+                <a href={item.url}>
+                  <img src={item.img} alt={item.name} />
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
