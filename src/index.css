@@ -81,6 +81,17 @@ header {
   font-size: 15px;
 }
 
+.currentSeries {
+  background-color: #0080ff;
+  color: white;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  left: 9%;
+}
+
 .loadMore {
   background-color: #0080ff;
   color: white;

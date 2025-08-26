@@ -9,6 +9,9 @@ const Main = () => {
         <div>
           <img src="../img/jumbotron.jpg" alt="" />
         </div>
+        <div>
+          <div className="currentSeries">CURRENT SERIES</div>
+        </div>
         <div className="containerComic">
           <div className="rowComic">
             {comics.map(comic => {
