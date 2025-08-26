@@ -6,8 +6,9 @@ const Main = () => {
   return (
     <main>
       <div className="contentMainBlack">
-        <div></div>
-        <img src="../img/jumbotron.jpg" alt="" />
+        <div>
+          <img src="../img/jumbotron.jpg" alt="" />
+        </div>
         <div className="containerComic">
           <div className="rowComic">
             {comics.map(comic => {
