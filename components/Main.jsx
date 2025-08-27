@@ -1,6 +1,6 @@
 import React from 'react'
 import comics from '../src/data/comics'
-
+import ComicCard from './ComicCard'
 
 const Main = () => {
   return (
@@ -14,16 +14,13 @@ const Main = () => {
         </div>
         <div className="containerComic">
           <div className="rowComic">
-            {comics.map(comic => {
-              return (
-                <div className="colComic" key={comic.id}>
-                  <div className="cardComic">
-                    <img src={comic.thumb} alt={comic.title} />
-                  </div>
-                  <h4>{comic.title}</h4>
-                </div>
-              )
-            })}
+            {comics.map((comic) => (
+              <ComicCard
+                key={comic.id}
+                thumb={comic.thumb}
+                title={comic.title}
+              />
+            ))}
             <button className="loadMore">LOAD MORE</button>
           </div>
         </div>
